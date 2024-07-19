@@ -1,0 +1,14 @@
+{
+  "name": "Go",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": ["golang.go"]
+    }
+  }
+}

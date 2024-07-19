@@ -1,0 +1,16 @@
+{
+  "name": "Python",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "options": ["--add-host=host.docker.internal:host-gateway"]
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {},
+
+      "extensions": ["ms-python.python", "ms-python.vscode-pylance"]
+    }
+  },
+  "postCreateCommand": "pip install --user -r requirements.txt && bash .devcontainer/create.sh",
+  "remoteUser": "vscode"
+}
